@@ -13,6 +13,13 @@
             "description": "returns the symbol of the NFT",
             "entry_point": 3077209249,
             "read_only": true
+        },
+        "max_supply": {
+            "argument": "mynft.max_supply_arguments",
+            "return": "mynft.max_supply_result",
+            "description": "returns the maximum number of NFTs",
+            "entry_point": 46564349,
+            "read_only": true
         }
     },
     "types": {
@@ -37,6 +44,17 @@
                         "fields": {
                             "value": {
                                 "type": "string",
+                                "id": 1
+                            }
+                        }
+                    },
+                    "max_supply_arguments": {
+                        "fields": {}
+                    },
+                    "max_supply_result": {
+                        "fields": {
+                            "value": {
+                                "type": "uint64",
                                 "id": 1
                             }
                         }

@@ -19,4 +19,13 @@ export class Mynft {
 
     return res;
   }
+
+  max_supply(args: mynft.max_supply_arguments): mynft.max_supply_result {
+    // YOUR CODE HERE
+
+    const res = new mynft.max_supply_result();
+    // res.value = ;
+
+    return res;
+  }
 }

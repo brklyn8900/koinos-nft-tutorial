@@ -29,6 +29,16 @@ export function main(): i32 {
       break;
     }
 
+    case 0x02c683fd: {
+      const args = Protobuf.decode<ProtoNamespace.max_supply_arguments>(
+        contractArgs.args,
+        ProtoNamespace.max_supply_arguments.decode
+      );
+      const res = c.max_supply(args);
+      retbuf = Protobuf.encode(res, ProtoNamespace.max_supply_result.encode);
+      break;
+    }
+
     default:
       System.exit(1);
       break;

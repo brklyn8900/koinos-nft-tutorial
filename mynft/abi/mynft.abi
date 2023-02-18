@@ -13,7 +13,14 @@
             "description": "returns the symbol of the NFT",
             "entry-point": "0xb76a7ca1",
             "read-only": true
+        },
+        "max_supply": {
+            "argument": "mynft.max_supply_arguments",
+            "return": "mynft.max_supply_result",
+            "description": "returns the maximum number of NFTs",
+            "entry-point": "0x02c683fd",
+            "read-only": true
         }
     },
-    "types": "Cp0BChphc3NlbWJseS9wcm90by9teW5mdC5wcm90bxIFbXluZnQiEAoObmFtZV9hcmd1bWVudHMiIwoLbmFtZV9yZXN1bHQSFAoFdmFsdWUYASABKAlSBXZhbHVlIhIKEHN5bWJvbF9hcmd1bWVudHMiJQoNc3ltYm9sX3Jlc3VsdBIUCgV2YWx1ZRgBIAEoCVIFdmFsdWViBnByb3RvMw=="
+    "types": "CuABChphc3NlbWJseS9wcm90by9teW5mdC5wcm90bxIFbXluZnQiEAoObmFtZV9hcmd1bWVudHMiIwoLbmFtZV9yZXN1bHQSFAoFdmFsdWUYASABKAlSBXZhbHVlIhIKEHN5bWJvbF9hcmd1bWVudHMiJQoNc3ltYm9sX3Jlc3VsdBIUCgV2YWx1ZRgBIAEoCVIFdmFsdWUiFgoUbWF4X3N1cHBseV9hcmd1bWVudHMiKQoRbWF4X3N1cHBseV9yZXN1bHQSFAoFdmFsdWUYASABKARSBXZhbHVlYgZwcm90bzM="
 }

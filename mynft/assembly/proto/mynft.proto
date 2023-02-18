@@ -19,3 +19,12 @@ message symbol_arguments {
 message symbol_result {
   string value = 1;
 }
+
+// @description returns the maximum number of NFTs 
+// @read-only true
+message max_supply_arguments {
+
+}
+message max_supply_result {
+  uint64 value = 1;
+}
