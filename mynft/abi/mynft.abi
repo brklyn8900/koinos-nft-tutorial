@@ -1,0 +1,19 @@
+{
+    "methods": {
+        "name": {
+            "argument": "mynft.name_arguments",
+            "return": "mynft.name_result",
+            "description": "returns the name of the NFT collection",
+            "entry-point": "0x82a3537f",
+            "read-only": true
+        },
+        "symbol": {
+            "argument": "mynft.symbol_arguments",
+            "return": "mynft.symbol_result",
+            "description": "returns the symbol of the NFT",
+            "entry-point": "0xb76a7ca1",
+            "read-only": true
+        }
+    },
+    "types": "Cp0BChphc3NlbWJseS9wcm90by9teW5mdC5wcm90bxIFbXluZnQiEAoObmFtZV9hcmd1bWVudHMiIwoLbmFtZV9yZXN1bHQSFAoFdmFsdWUYASABKAlSBXZhbHVlIhIKEHN5bWJvbF9hcmd1bWVudHMiJQoNc3ltYm9sX3Jlc3VsdBIUCgV2YWx1ZRgBIAEoCVIFdmFsdWViBnByb3RvMw=="
+}

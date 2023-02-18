@@ -1,0 +1,48 @@
+{
+    "methods": {
+        "name": {
+            "argument": "mynft.name_arguments",
+            "return": "mynft.name_result",
+            "description": "returns the name of the NFT collection",
+            "entry_point": 2191741823,
+            "read_only": true
+        },
+        "symbol": {
+            "argument": "mynft.symbol_arguments",
+            "return": "mynft.symbol_result",
+            "description": "returns the symbol of the NFT",
+            "entry_point": 3077209249,
+            "read_only": true
+        }
+    },
+    "types": {
+        "nested": {
+            "mynft": {
+                "nested": {
+                    "name_arguments": {
+                        "fields": {}
+                    },
+                    "name_result": {
+                        "fields": {
+                            "value": {
+                                "type": "string",
+                                "id": 1
+                            }
+                        }
+                    },
+                    "symbol_arguments": {
+                        "fields": {}
+                    },
+                    "symbol_result": {
+                        "fields": {
+                            "value": {
+                                "type": "string",
+                                "id": 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

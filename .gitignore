@@ -1,3 +1,11 @@
+build
+\.idea/
+\.vs/
+*.spec.wat
+*.spec.map
+*.wasm
+*.pb
+
 # Logs
 logs
 *.log
