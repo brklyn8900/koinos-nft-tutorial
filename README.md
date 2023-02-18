@@ -1,5 +1,7 @@
 # koinos-nft-tutorial
 
+If following along, use this tutorial by Roamin to create the 'mynft' boilerplate project 
+https://roamin.hashnode.dev/create-your-first-koinos-smart-contract-in-minutes
 
 So, let's try to start implementing a basic NFT contract, I worked on describing the different entry points/functions that the contract is going to need:
 
