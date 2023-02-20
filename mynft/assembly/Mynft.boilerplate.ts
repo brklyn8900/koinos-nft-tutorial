@@ -28,4 +28,14 @@ export class Mynft {
 
     return res;
   }
+
+  mint(args: mynft.mint_arguments): mynft.mint_result {
+    // const to = args.to;
+
+    // YOUR CODE HERE
+
+    const res = new mynft.mint_result();
+
+    return res;
+  }
 }

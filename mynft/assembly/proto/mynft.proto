@@ -28,3 +28,26 @@ message max_supply_arguments {
 message max_supply_result {
   uint64 value = 1;
 }
+// @description mints the NFT to the specified address
+// @read-only false
+message mint_arguments {
+  bytes to = 1;
+}
+message mint_result {
+
+}
+
+
+message token_object {
+  bytes owner = 1;
+}
+message supply_object {
+  uint64 value = 1;
+}
+message balance_object {
+  uint64 value = 1;
+}
+message mint_event {
+  bytes to = 1;
+  bytes token_id = 2;
+}

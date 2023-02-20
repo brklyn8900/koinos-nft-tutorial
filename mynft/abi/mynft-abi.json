@@ -20,6 +20,13 @@
             "description": "returns the maximum number of NFTs",
             "entry_point": 46564349,
             "read_only": true
+        },
+        "mint": {
+            "argument": "mynft.mint_arguments",
+            "return": "mynft.mint_result",
+            "description": "mints the NFT to the specified address",
+            "entry_point": 3698268091,
+            "read_only": false
         }
     },
     "types": {
@@ -56,6 +63,53 @@
                             "value": {
                                 "type": "uint64",
                                 "id": 1
+                            }
+                        }
+                    },
+                    "mint_arguments": {
+                        "fields": {
+                            "to": {
+                                "type": "bytes",
+                                "id": 1
+                            }
+                        }
+                    },
+                    "mint_result": {
+                        "fields": {}
+                    },
+                    "token_object": {
+                        "fields": {
+                            "owner": {
+                                "type": "bytes",
+                                "id": 1
+                            }
+                        }
+                    },
+                    "supply_object": {
+                        "fields": {
+                            "value": {
+                                "type": "uint64",
+                                "id": 1
+                            }
+                        }
+                    },
+                    "balance_object": {
+                        "fields": {
+                            "value": {
+                                "type": "uint64",
+                                "id": 1
+                            }
+                        }
+                    },
+                    "mint_event": {
+                        "fields": {
+                            "to": {
+                                "type": "bytes",
+                                "id": 1
+                            },
+                            "token_id": {
+                                "type": "bytes",
+                                "id": 2
                             }
                         }
                     }

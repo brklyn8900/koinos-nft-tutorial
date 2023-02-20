@@ -39,6 +39,16 @@ export function main(): i32 {
       break;
     }
 
+    case 0xdc6f17bb: {
+      const args = Protobuf.decode<ProtoNamespace.mint_arguments>(
+        contractArgs.args,
+        ProtoNamespace.mint_arguments.decode
+      );
+      const res = c.mint(args);
+      retbuf = Protobuf.encode(res, ProtoNamespace.mint_result.encode);
+      break;
+    }
+
     default:
       System.exit(1);
       break;

@@ -24,6 +24,6 @@ describe('contract', () => {
     const args = new mynft.max_supply_arguments();
     const res = c.max_supply(args);
 
-    expect(res.value).toStrictEqual(100);
+    expect(res.value).toStrictEqual(10);
   })
 });
