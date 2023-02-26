@@ -62,7 +62,10 @@
                         "fields": {
                             "value": {
                                 "type": "uint64",
-                                "id": 1
+                                "id": 1,
+                                "options": {
+                                    "jstype": "JS_STRING"
+                                }
                             }
                         }
                     },
@@ -70,7 +73,10 @@
                         "fields": {
                             "to": {
                                 "type": "bytes",
-                                "id": 1
+                                "id": 1,
+                                "options": {
+                                    "(koinos.btype)": "ADDRESS"
+                                }
                             }
                         }
                     },
@@ -81,7 +87,10 @@
                         "fields": {
                             "owner": {
                                 "type": "bytes",
-                                "id": 1
+                                "id": 1,
+                                "options": {
+                                    "(koinos.btype)": "ADDRESS"
+                                }
                             }
                         }
                     },
@@ -89,7 +98,10 @@
                         "fields": {
                             "value": {
                                 "type": "uint64",
-                                "id": 1
+                                "id": 1,
+                                "options": {
+                                    "jstype": "JS_STRING"
+                                }
                             }
                         }
                     },
@@ -97,7 +109,10 @@
                         "fields": {
                             "value": {
                                 "type": "uint64",
-                                "id": 1
+                                "id": 1,
+                                "options": {
+                                    "jstype": "JS_STRING"
+                                }
                             }
                         }
                     },
@@ -105,11 +120,17 @@
                         "fields": {
                             "to": {
                                 "type": "bytes",
-                                "id": 1
+                                "id": 1,
+                                "options": {
+                                    "(koinos.btype)": "ADDRESS"
+                                }
                             },
                             "token_id": {
                                 "type": "bytes",
-                                "id": 2
+                                "id": 2,
+                                "options": {
+                                    "(koinos.btype)": "HEX"
+                                }
                             }
                         }
                     }

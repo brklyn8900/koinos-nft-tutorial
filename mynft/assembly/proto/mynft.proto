@@ -1,37 +1,33 @@
 syntax = "proto3";
-
 package mynft;
+
+import "koinos/options.proto"; 
 
 // @description returns the name of the NFT collection
 // @read-only true
-message name_arguments {
-  
-}
+message name_arguments {}
 message name_result {
   string value = 1;
 }
 
 // @description returns the symbol of the NFT
 // @read-only true
-message symbol_arguments {
-  
-}
+message symbol_arguments {}
 message symbol_result {
   string value = 1;
 }
 
 // @description returns the maximum number of NFTs 
 // @read-only true
-message max_supply_arguments {
-
-}
+message max_supply_arguments {}
 message max_supply_result {
-  uint64 value = 1;
+  uint64 value = 1 [jstype = JS_STRING];
 }
+
 // @description mints the NFT to the specified address
 // @read-only false
 message mint_arguments {
-  bytes to = 1;
+  bytes to = 1 [(koinos.btype) = ADDRESS];
 }
 message mint_result {
 
@@ -39,15 +35,15 @@ message mint_result {
 
 
 message token_object {
-  bytes owner = 1;
+  bytes owner = 1 [(koinos.btype) = ADDRESS];
 }
 message supply_object {
-  uint64 value = 1;
+  uint64 value = 1 [jstype = JS_STRING];
 }
 message balance_object {
-  uint64 value = 1;
+  uint64 value = 1 [jstype = JS_STRING];
 }
 message mint_event {
-  bytes to = 1;
-  bytes token_id = 2;
+  bytes to = 1 [(koinos.btype) = ADDRESS];
+  bytes token_id = 2 [(koinos.btype) = HEX];
 }

@@ -4,9 +4,9 @@ import { Balances } from "./state/Balances";
 import { Supply } from "./state/Supply";
 import { Tokens } from "./state/Tokens";
 
-const NAME = "MY_NFT"
-const SYMBOL = "MNFT"
-const MAX_SUPPLY:u64 = 10
+const NAME = "East Coast NFTs"
+const SYMBOL = "ECN"
+const MAX_SUPPLY:u64 = 1337
 
 
 export class Mynft {
